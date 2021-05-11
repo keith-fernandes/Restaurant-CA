@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- my font -->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -15,15 +18,40 @@
     <title>Keith's Restaurant</title>
 </head>
 <body>
-    
     <div class="container"> 
-        <div style="background-image: url(./images/old-spoon-on-dark-table.jpg);">
-        <header>
-
+       <header>
+        <h1>Keith's Restaurant</h1>
+        <p style="color: beige;" family-font='Merienda' coursive>Here you will find the best Country side food of Brazil</p>
         </header>
-    <h1>Welcome to Keith's Restaurant</h1>
-    <p>Here you will find the best Country side food of Brasil</p>
-        </div>
+   
+       
+        <center>
+                <form onsubmit ="return validatorPswd()">
+                <!-- Enter Password -->
+                <td> Enter Password </td>
+                <input type = "password" 
+                id = "pswd" value = ""> <br>
+                <span id = "message" style="color:rgb(255, 115, 0)"> </span> <br><br>
+        </center>
+        
+        
     </div>
+
+
+
+
+
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Social media library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

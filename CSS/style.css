@@ -1,0 +1,47 @@
+body{
+   
+   background-image: url("../images/old-spoon-on-dark-table.jpg");
+   background-size: cover ;
+   background-repeat: repeat-x;
+   background-color:darkgray;
+   background-position: center;
+   background-attachment: fixed;
+   margin-right: 250px;
+   }
+   
+div{
+color:rgb(243, 243, 139);
+font-family:'Merienda', cursive;
+padding: 5%;
+margin-left: 5%;}
+
+li {list-style-type: none;
+    font-size: 16pt;
+    }
+    .mail {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    border: 1px soild silver;
+    }
+    .mail h2 {
+    margin-left: 38px;
+    }
+    input {
+    font-family:'Merienda', cursive;
+    font-size: 13pt;
+    }
+    input:focus, textarea:focus{
+    background-color: lightyellow;
+    }
+    input submit {
+    font-size: 12pt;
+    }
+    .rq {
+    font-family:'Merienda', cursive;
+    color:rgb(243, 243, 139);
+    font-size: 10pt;
+    font-weight: bold;
+    }
+
