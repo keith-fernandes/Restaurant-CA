@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- my font -->
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- My CSS -->
-    <link rel="stylesheet" href="./CSS/style.css"/>
-    <!-- My JS -->
-    <script src="./JS/script.js"></script>
-    
+    <link rel="stylesheet" href="./CSS/style.css" />
+   
     <title>Keith's Restaurant</title>
 </head>
+
 <body>
-    <div class="container"> 
-       <header>
-        <h1>Keith's Restaurant</h1>
-        <p style="color: beige;" family-font='Merienda' coursive>Here you will find the best Country side food of Brazil</p>
-        </header>
-   
-       
-        <center>
-                <form onsubmit ="return validatorPswd()">
-                <!-- Enter Password -->
-                <td> Enter Password </td>
-                <input type = "password" 
-                id = "pswd" value = ""> <br>
-                <span id = "message" style="color:rgb(255, 115, 0)"> </span> <br><br>
-        </center>
+    <div class="container">
+        <header>  
+            <div id="mySidenav" class="sidenav">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="menu">Menu</a>
+            <a href="#" id="page2">Page 2</a>
+            <a href="#" id="calculator">Calculator</a>
+            </div>
+
+            <center>
+                <h1 class="display-2">Keith's Restaurant</h1><br>
+                <p style="color: rgb(252, 175, 9);">Here you will find
+                    the best Country side food of Brazil</p>
+            </center>
+       </header>
+    </div>
         
-        
+    <div class="container">
+            <form onsubmit="return validatorPswd()">
+            <h4>Please, enter your password to continue.</h4>
+            <!-- Enter Password -->
+            <td> Enter Password </td>
+            <input type="password" id="pswd"  value=""> <br>
+            <span id="message" style="color:rgb(250, 102, 102)" font-family="Merienda"> </span> <br>
+    </div>
+
+    <div class="container">
+
+        <h4>User Generator</h4>
+        <button class="button button4" id="myBtn">Get Data</button>
+        <div id="output"></div>
+
     </div>
 
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Social media library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-     <!-- jQuery library -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script src="./JS/script.js"></script>
 
-     <!-- Social media library -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-     <!-- Popper JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- 
-     <!-- Latest compiled JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

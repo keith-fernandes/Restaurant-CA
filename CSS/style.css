@@ -1,3 +1,17 @@
+@font-face {
+   font-family: "Bleeding Cowboys";
+   src: url("../font-cowboy/BleedingCowboys-gw6p.ttf");
+}
+
+.display-2 {
+font-family: "Bleeding Cowboys";
+text-shadow: 3px 3px black;
+}
+p{
+font-size: 25px;
+text-shadow: 2px 2px black;
+}
+
 body{
    
    background-image: url("../images/old-spoon-on-dark-table.jpg");
@@ -8,40 +22,48 @@ body{
    background-attachment: fixed;
    margin-right: 250px;
    }
-   
-div{
-color:rgb(243, 243, 139);
-font-family:'Merienda', cursive;
-padding: 5%;
-margin-left: 5%;}
 
-li {list-style-type: none;
-    font-size: 16pt;
+   #mySidenav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 20px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 12px;
+      color: rgb(104, 46, 46);
+      border-radius: 0 5px 5px 0;
     }
-    .mail {
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 400px;
-    border: 1px soild silver;
+    
+    #mySidenav a:hover {
+      left: 0;
     }
-    .mail h2 {
-    margin-left: 38px;
+    
+    #home {
+      top: 20px;
+      background-color: #ee8229;
     }
-    input {
-    font-family:'Merienda', cursive;
-    font-size: 13pt;
+    
+    #menu {
+      top: 80px;
+      background-color: #f3bb21;
     }
-    input:focus, textarea:focus{
-    background-color: lightyellow;
+    
+    #page2 {
+      top: 140px;
+      background-color: #e7f436;
     }
-    input submit {
-    font-size: 12pt;
+    
+    #calculator {
+      top: 200px;
+      background-color: rgb(255, 255, 255)
     }
-    .rq {
-    font-family:'Merienda', cursive;
-    color:rgb(243, 243, 139);
-    font-size: 10pt;
-    font-weight: bold;
-    }
+
+div{
+   color:rgb(245, 235, 189);
+   font-family:'Merienda';
+   padding: 20px;
+   margin-left: 5%;
+}
+
 
