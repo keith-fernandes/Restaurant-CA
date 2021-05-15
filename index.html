@@ -8,23 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- my font -->
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"  rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
-   
+    
+    <!-- My JS -->
+    <script src="JS/script.js" defer></script>
+
     <title>Keith's Restaurant</title>
 </head>
 
 <body>
     <div class="container">
-        <header>  
+        <header class="omg">
             <div id="mySidenav" class="sidenav">
-            <a href="#" id="home">Home</a>
-            <a href="#" id="menu">Menu</a>
-            <a href="#" id="page2">Page 2</a>
-            <a href="#" id="calculator">Calculator</a>
+                <a href="index.html" id="home">Home</a>
+                <a href="#mymenu" id="menu">Menu</a>
+                <a href="pag2.html" id="page2">Page 2</a>
+                <a href="#end" id="total">Total</a>
             </div>
 
             <center>
@@ -32,25 +36,180 @@
                 <p style="color: rgb(252, 175, 9);">Here you will find
                     the best Country side food of Brazil</p>
             </center>
-       </header>
+        </header>
     </div>
-        
+
     <div class="container">
-            <form onsubmit="return validatorPswd()">
+        <div class="omg">
+        <form onsubmit="return validatorPswd()">
             <h4>Please, enter your password to continue.</h4>
             <!-- Enter Password -->
             <td> Enter Password </td>
-            <input type="password" id="pswd"  value=""> <br>
+            <input type="password" id="pswd" value=""> <br>
             <span id="message" style="color:rgb(250, 102, 102)" font-family="Merienda"> </span> <br>
-    </div>
+        </div>
+        </div>
 
     <div class="container">
-
+        <div class="omg">
         <h4>User Generator</h4>
         <button class="button button4" id="myBtn">Get Data</button>
         <div id="output"></div>
-
     </div>
+    </div>
+
+<div>
+  <center>
+    <table>
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;"><a name="mymenu" id="mymenu"></a>Our Menu</th>
+        </tr>
+       
+        <tr>
+            <td>Product</td>
+            <td>Quant</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;">Starters</th>
+        </tr>
+        <tr>
+            <td>Porção de Torresmo -> (Pork belly fried)</td>
+            <td><input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="5"/></td></td>
+            <td>€5</td>
+        </tr>
+        <tr>
+            <td>Porção de Calabresa -> (Brazilian Sausage fried)</td>
+            <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="3"/></td></td>
+            <td>€3</td>
+        </tr>
+        <tr>
+            <td>Porção de Mandioca -> (Fried Cassava) <i class="fas fa-seedling"></i> Veg option</td>
+            <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="4"/></td></td>
+            <td>€4</td>
+        </tr>
+        <tr>
+            <td>Porção de fritas -> (Chips) <i class="fas fa-seedling"></i> Veg option</td>
+            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="3"/></td></td>
+            <td>€3</td>
+        </tr>
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;">Main Menu</th>
+        </tr>
+        <tr>
+            <td>Galinhada -> (Chicken, Rice & Vegetables cooked) </td>
+            <td><input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="8"/></td></td>
+            <td>€8</td>
+        </tr>
+        <tr>
+            <td>Vaca Atolada -> (Back Ribs stew & Cassava cooked) </td>
+            <td><input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="9"/></td></td>
+            <td>€9</td>
+        </tr>
+        <tr>
+            <td>Feijão Gordo -> (Beans, Sausages and Pork cooked) </td>
+            <td><input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="7"/></td></td>
+            <td>€7</td>
+        </tr>
+        <tr>
+            <td>Strogonoff de Cogumelo -> (Strogonoff of Mushrooms) <i class="fas fa-seedling"></i> Veg option</td>
+            <td><input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="7"/></td></td>
+            <td>€7</td>
+    
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;">Drinks</th>
+        </tr>
+        <tr>
+            <td>Soft Drink </td>
+            <td><input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="2"/></td></td>
+            <td>€2</td>
+        </tr>
+        <tr>
+            <td>Beer </td>
+            <td><input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="3"/></td></td>
+            <td>€3</td>
+        </tr>
+        <tr>
+            <td>Caipirinha -> (Cachaça, Lime, Sugar & Ice) </td>
+            <td><input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="5"/></td></td>
+            <td>€5</td>
+        </tr>
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;">Dessert</th>
+        </tr>
+        <tr>
+            <td>Bolo de Cural -> (Sweet Corn Cake) </td>
+            <td><input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="3"/></td></td> 
+            <td>€3</td>
+        </tr>
+        <tr>
+            <td>Sorvete de Milho Verde -> (Sweet Corn - Ice Cream)</td>
+            <td><input name="qnt_13" type="text" id="qnt_13" value="0" size="3" data-price="3"/></td></td>
+            <td>€3</td>
+        </tr>
+        <tr>
+            <td>Canjica -> (Sweet Corn & Condensed Milk Cooked)</td>
+            <td><input name="qnt_14" type="text" id="qnt_14" value="0" size="3" data-price="4"/></td></td>
+            <td>€4</td>
+        </tr>
+        <tr>
+            <td class="total">&nbsp;</td>
+            <td class="total right"><strong>Total:</strong></td>
+            <td class="total"><strong><div id="ItemsTotal" style="color: black;">€0</div></strong></td>
+        </tr>
+       
+    </table>
+
+    <table class="totalcalc">
+        <tr>
+            <th colspan="3" style="font-family: Bleeding Cowboys; font-size: 18px;">Total<a name="end"></a></th>
+        </tr>
+        <tr>
+            <td>Product</td>
+            <td>Total</td>
+        </tr>
+        <tr>
+            <td>Starters</td>
+            <td id="StartersTotal" style="color: black;" class="total0"><div >€0</td>
+        </tr>
+        <tr>
+            <td>Main Menu</td>
+            <td id="MenuTotal" style="color: black;" class="total"><div >€0</td>
+        </tr> 
+        <tr>
+            <td>Drinks</td>
+            <td id="DrinksTotal" style="color: black;" class="total"><div >€0</td>
+        </tr> 
+        <tr>
+            <td>Dessert</td>
+            <td id="DessertTotal" style="color: black;" class="total"><div >€0</td>
+        </tr> 
+        <th colspan="3" font-size: 18px;>Total of Vegetarian & Non-Vegetarian<a name="end"></a></th>
+        <tr>
+            <td>Vegetarian <i class="fas fa-seedling"></i></td>
+            <td id="VegTotal" style="color: black;" class="total"><div >€0</td>
+        </tr> 
+        <tr>
+            <td>Non-Vegetarian</td>
+            <td id="NonVegTotal" style="color: black;" class="total"><div >€0</td>
+        </tr><br><br>
+    </table> <br>
+
+    <div class="omg">
+    <div class="fa-2x" align="middle"><a href="#" _fcksavedurl="#" style="color: blanchedalmond;"><i class="far fa-caret-square-up"  ></i> Top</a></div></div>
+<   
+    </center>    
+    </div>
+
+    <footer>
+        <center>
+        <h5> Client-Side Programming - &nbsp; Keith's Restaurant - &nbsp; John Snel <br> &nbsp;Author: Keith Fernandes -
+            3532020
+            &nbsp;
+            <a href="mailto:keith_kcf@hotmail.com" style="color: grey;">keith_kcf@hotmail.com</a>
+        </h5>
+    </center>
+    </footer>
 
 
     <!-- jQuery library -->
@@ -65,8 +224,6 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- My JS -->
-    <script src="./JS/script.js"></script>
 
 </body>
 

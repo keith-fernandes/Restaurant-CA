@@ -20,17 +20,29 @@ body{
    background-color:darkgray;
    background-position: center;
    background-attachment: fixed;
-   margin-right: 250px;
+   margin-left: 200px;
+   margin-right: 200px;
    }
+
+   footer {
+   
+      font-family:'Merienda';
+      font-size: 15px;
+      margin-top: 240px;
+      margin-bottom: 5px;
+      text-align:center;
+      background-color:rgba(211, 211, 211, 0.329);
+      color: white;
+    }
 
    #mySidenav a {
       position: absolute;
-      left: -80px;
+      left: -90px;
       transition: 0.3s;
-      padding: 20px;
+      padding: 25px;
       width: 100px;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 15px;
       color: rgb(104, 46, 46);
       border-radius: 0 5px 5px 0;
     }
@@ -45,25 +57,65 @@ body{
     }
     
     #menu {
-      top: 80px;
+      top: 100px;
       background-color: #f3bb21;
     }
     
     #page2 {
-      top: 140px;
+      top: 180px;
       background-color: #e7f436;
     }
     
-    #calculator {
-      top: 200px;
+    #total {
+      top: 260px;
       background-color: rgb(255, 255, 255)
     }
 
-div{
-   color:rgb(245, 235, 189);
-   font-family:'Merienda';
-   padding: 20px;
-   margin-left: 5%;
+.tables{
+  font-family:'Merienda';
+  font-size: 15px;
+  width: 800px;
+  color: black;
 }
 
+table, th, td{
+  border: 1px solid black; 
+ 
+}
+th, td {
+  padding: 10px;
+}
 
+table, .totalcalc {
+  font-family:'Merienda';
+  font-size: 15px;
+  width: 800px;
+  color: black;
+}
+
+table th {background-color: rgba(241, 230, 187, 0.918);}
+table td {background-color: rgba(255, 255, 255, 0.685);}
+.right {text-align: right; }
+
+.default {
+  border-color: #e7e7e7;
+  background: rgba(169, 169, 169, 0.644);
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+  ;
+}
+
+.omg{
+  color: rgb(230, 207, 107); padding: 20px; margin-left: 5%;font-family:'Merienda'}
+
+@charset "utf-8";
+
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body pag2{margin: 0;border: 0; padding: 0;}
+.Slide{float: left;width: 100%; overflow: hidden;}
+  .SlideVideo video{width: 100%;}
+  .SlideText{position: absolute;width: 100%; text-align: center; top: 200px;color: black;}
