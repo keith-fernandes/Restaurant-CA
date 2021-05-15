@@ -107,6 +107,9 @@ table td {background-color: rgba(255, 255, 255, 0.685);}
   background: #e7e7e7;
   ;
 }
+element.style{
+  width:max-content;
+  }
 
 .omg{
   color: rgb(230, 207, 107); padding: 20px; margin-left: 5%;font-family:'Merienda'}
@@ -119,3 +122,70 @@ body pag2{margin: 0;border: 0; padding: 0;}
 .Slide{float: left;width: 100%; overflow: hidden;}
   .SlideVideo video{width: 100%;}
   .SlideText{position: absolute;width: 100%; text-align: center; top: 200px;color: black;}
+
+
+  .cs-text {
+    width: 645px;
+    margin: 120px auto 30px;
+    cursor: default;
+  }
+  
+  .cs-text > span {
+    display: block;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .cs-text-cut {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .cs-text-cut:first-child {
+    border-top: 1px solid rgba(255,255,255,0.5);
+  }
+  
+  .cs-text-cut:last-child {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  
+  .cs-text-cut span {
+    display: block;
+    line-height: 150px;
+    color: rgba(230, 207, 107);
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6px;
+    font-family: "Bleeding Cowboys";
+    text-shadow: 7px 2px 0 rgba(8, 8, 8, 0.3);
+  }
+  
+  .cs-text-cut:last-child span {
+    margin-top: -84px;
+  }
+  
+  
+.cs-text:hover .cs-text-cut:first-child {
+	-webkit-transform: translateY(-25px);
+	-moz-transform: translateY(-25px);
+	-o-transform: translateY(-25px);
+	-ms-transform: translateY(-25px);
+	transform: translateY(-25px);
+	opacity: 0.5;
+}
+
+.cs-text:hover .cs-text-cut:last-child {
+	-webkit-transform: translateY(25px);
+	-moz-transform: translateY(25px);
+	-o-transform: translateY(25px);
+	-ms-transform: translateY(25px);
+	transform: translateY(25px);
+	opacity: 0.5;
+}
